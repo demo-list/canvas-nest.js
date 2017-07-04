@@ -68,7 +68,7 @@
   //创建画布，并添加到body中
   var the_canvas = document.createElement("canvas"), //画布
     config = get_config_option(), //配置
-    canvas_id = "c_n" + config.l, //canvas id
+    canvas_id = "cool-effect" + config.l, //canvas id
     context = the_canvas.getContext("2d"), canvas_width, canvas_height, 
     frame_func = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(func) {
       window.setTimeout(func, 1000 / 45);
